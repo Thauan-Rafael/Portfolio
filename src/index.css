@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+}
+#root{
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: fixed;
+}
+#sideBar{
+  display: grid;
+  background: linear-gradient(90deg, #272626 0%, #000000 70%) ;
+  width: 8vw;
+  text-align: center;
+  align-items: center;
+  border-right: 2px solid #740c7e;
+}
+#sideBar i {
+  color: #fff;
+  border: 2px solid #740c7e;
+  border-radius: 100%;
+  padding: 20% 0 20% 0;
+  margin: 0 10% 0 10%;
+  text-shadow: #740c7e 2.5px 2.5px;
+}
+#sideBar i:hover{
+  transform: scale(1.1);
+  background-color: #740c7e;
+}
