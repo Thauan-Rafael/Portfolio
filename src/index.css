@@ -2,12 +2,11 @@
   box-sizing: border-box;
   font-family: "Anta", sans-serif;
 }
-body{
-  min-height: 100vh;
+html,body{
+  overflow-x: hidden;
 }
 #root{
-  height: 100%;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -35,19 +34,28 @@ body{
 #mainContent{
   margin-left: 8vw;
   width: 92vw;
-  min-height:100vh;
+  height:100%;
 }
 #home{
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
   align-items: center;
-  min-height:100%;
+  justify-content: center;
   color: #fff;
   background: radial-gradient(circle, #1a1919 33%, #131313 66%, #000000 100%);
-  background-color: #444343;
+  height: 100vh;
+  border-bottom: 2px solid #740c7e;
+}
+#home img{
+  margin: auto;
+  width: 85%;
+  height:70%;
+  border: 6px solid #740c7e;
+  border-radius: 100%;
 }
 #homeHeader{
-  text-align: center;
+  padding: 10%;
 }
 #homeHeader h1{
   font-size: 8vw;
@@ -56,20 +64,63 @@ body{
 #homeHeader h2{
   font-size: 4.5vw;
   text-shadow: #740c7e 2px 2px;
+  margin: 2% 0 10% 0;
 }
-#sectionsButtons{
-  width: 85vw;
+#homeButtons{
   display: flex;
-  justify-content: space-between;
+  gap: 10%;
+  justify-content: center;
 }
-#sectionsButtons .btn{
+#homeButtons button {
   color: #fff;
-  width: 20vw;
+  width: 12vw;
+  height: 12vh;
   border: 2px solid #740c7e;
-  font-size: 2.5vw;
-  border-radius: 30px;
+  font-size: 5vw;
+  border-radius: 4vw;
   text-shadow: #740c7e 2px 2px;
+  background-color: transparent;
 }
-#sectionsButtons .btn:hover{
+#homeButtons button:hover {
   transform: scale(1.2);
+}
+#about{
+  background: radial-gradient(circle, #242323 33%, #242424 66%, #000000 100%);
+  padding: 5% 0 5% 0;
+  border-bottom: 2px solid #740c7e;
+}
+#about h2{
+  padding-bottom: 2%;
+  color: #fff;
+  text-align: center;
+  font-size: 4vw;
+  text-shadow: 2px 2px #740c7e;
+}
+#about p{
+  color: #fff;
+}
+#aboutContent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 3%;
+  margin: 0 5% 0 5%;
+  border: 2px solid #740c7e; 
+  border-radius: 5vh;
+}
+#aboutContent video {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #740c7e;
+}
+#aboutText{
+  margin-top: 4%;
+}
+#skillList{
+  text-align: center;
+}
+#skillList img{
+  width: 10%;
+  height: 10%;
 }

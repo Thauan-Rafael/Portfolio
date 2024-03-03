@@ -1,17 +1,17 @@
 import React from "react";
-
+import creatorImg from '../media/creatorImg.png';
 function Home(){
     return(
-        <div id="home" className="container-fluid">
+        
+        <div id="home">
+            <img src={creatorImg}></img>
             <div id="homeHeader">
                 <h1>Thauan Rafael</h1>
                 <h2>Web Developer</h2>
-            </div>
-            <div id="sectionsButtons">
-                <button type="button" className="btn">About me</button>
-                <button type="button" className="btn">Skills</button>
-                <button type="button" className="btn">Projects</button>
-                <button type="button" className="btn">Contact</button>
+                <div id="homeButtons">
+                    <button type="button" className="icon fa-brands fa-github"></button>
+                    <button type="button" className="icon fa-brands fa-linkedin"></button>
+                </div>
             </div>
         </div>
     )
