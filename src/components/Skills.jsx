@@ -7,21 +7,29 @@ import mysqlImg from '../media/mysql.png'
 import expressImg from '../media/express.png'
 import ejsImg from '../media/ejs.png'
 import nodeImg from '../media/node.png'
+
 function Skills(){
+    const [appName,setAppName] = React.useState('');
     return(
         <div id='skills'>
             <h2>My Skills</h2>
-            <div id="skillList">
-                <img src={reactImg}/>
-                <img src={bootstrapImg}/>
-                <img src={gitImg}/>
-                <img src={nodeImg}/>
-                <img src={expressImg}/>
-                <img src={ejsImg}/>
-                <img src={mysqlImg}/>
-                <img src={mongodbImg}/>
+            <div id="skillList" onMouseLeave={clearAppName}>
+                <SkillImgs id= "React" img= {reactImg}/> 
+                <SkillImgs id= "Bootstrap" img= {bootstrapImg}/> 
+                <SkillImgs id= "Node.js" img= {nodeImg}/> 
+                <SkillImgs id= "Express.js" img= {expressImg}/> 
+                <SkillImgs id= "EJS" img= {ejsImg}/> 
+                <SkillImgs id= "Git" img= {gitImg}/> 
+                <SkillImgs id= "MySQL" img= {mysqlImg}/> 
+                <SkillImgs id= "MongoDB" img= {mongodbImg}/> 
             </div>
+            <h3 id="selectedApp">{appName}</h3>
         </div>
     )
+    function clearAppName(){setAppName('')}
+    function SkillImgs(props){
+        return(<img id={props.id} src={props.img} onMouseOver={(event) =>{setAppName(event.target.id)}}/>)
+    }
 }
+
 export default Skills;

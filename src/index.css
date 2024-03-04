@@ -2,9 +2,7 @@
   box-sizing: border-box;
   font-family: "Anta", sans-serif;
 }
-html,body{
-  overflow-x: hidden;
-}
+
 #root{
   width: 100%;
   display: grid;
@@ -32,8 +30,8 @@ html,body{
   transform: scale(1.2);
 }
 #mainContent{
-  margin-left: 8vw;
-  width: 92vw;
+  margin-left: 8%;
+  width: 92%;
   height:100%;
 }
 #home{
@@ -89,7 +87,7 @@ html,body{
   padding: 5% 0 5% 0;
   border-bottom: 2px solid #740c7e;
 }
-#about h2{
+#about h2, #skills h2, #projects h2{
   padding-bottom: 2%;
   color: #fff;
   text-align: center;
@@ -117,10 +115,39 @@ html,body{
 #aboutText{
   margin-top: 4%;
 }
+#skills{
+  background: radial-gradient(circle, #1a1919 33%, #131313 66%, #000000 100%);
+  padding: 5% 0 5% 0;
+  border-bottom: 2px solid #740c7e;
+}
 #skillList{
-  text-align: center;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 2%;
+  margin: 5% auto 3% auto;
+  padding-bottom: 3%; 
+  border-bottom: 4px solid #740c7e;
 }
 #skillList img{
-  width: 10%;
-  height: 10%;
+  width: 9vw;
+  height: 13vh;
+}
+#skillList img:hover{
+  transform: scale(1.3);
+}
+#selectedApp{
+  height: 5vh;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 3vw;
+  text-shadow: 2px 2px #740c7e;  
+}
+#projects{
+  background: radial-gradient(circle, #242323 33%, #242424 66%, #000000 100%);
+}
+#projects h2{
+  margin: 0; 
 }
