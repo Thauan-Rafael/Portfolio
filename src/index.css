@@ -147,7 +147,12 @@
 }
 #projects{
   background: radial-gradient(circle, #242323 33%, #242424 66%, #000000 100%);
+  padding: 5% 0 5% 0;
 }
 #projects h2{
   margin: 0; 
+}
+.card img{
+  width: 10%;
+  height: 10%;
 }
