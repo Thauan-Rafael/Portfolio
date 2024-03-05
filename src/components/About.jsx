@@ -13,7 +13,9 @@ function About(){
                 <p> - Email: thauanrafaeltrabalho@gmail.com</p>
                 <p> - Rio De Janeiro, Brazil</p>
             </div>
-            <video controls src={tempVideo}></video>
+            <div>
+                <video controls src={tempVideo}></video>
+            </div>
         </div>
         </div>
     )
