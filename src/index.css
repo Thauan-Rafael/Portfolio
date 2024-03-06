@@ -313,7 +313,7 @@
   }
   .card{
     width: 80vw;
-    height: 50vh;
+    height: 350px;
   }
   .card-header p{
     display: flex;
@@ -335,4 +335,28 @@
     font-size: 90%;
     padding:1%;
   }
+}
+@media(min-width: 577px) and (max-width: 1023px) and (min-height: 1024px){
+  #sideBar i {
+    font-size: 5vw;
+  }
+  .card{
+    height: 40vh;
+  }
+  .card-header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 2.5vw;
+    height: 100%;
+  }
+  .card-body{
+    grid-template-rows: 2fr 1fr;
+  }
+  .card-text{
+    font-size: 80%;
+    margin: 0 1% 0 1%;
+  }
+
 }
