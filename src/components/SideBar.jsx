@@ -7,6 +7,7 @@ function SideBar(){
             <i id='barLink2' className="icon fa-solid fa-user fa-2x" onClick={redirectUser}></i>
             <i id='barLink3' className="icon fa-solid fa-lightbulb fa-2x" onClick={redirectUser}></i>
             <i id='barLink4' className="icon fa-solid fa-folder fa-2x" onClick={redirectUser}></i>
+            <i className="icon fa-solid fa-language fa-2x" onClick={changeLanguage}></i>
         </div>
     )
 }
@@ -33,5 +34,22 @@ function redirectUser(event){
         default:
             break;
     }
+}
+let englishVersion = false;
+const languages = [{
+    title: 'Web Developer'
+},
+{
+    title: 'Desenvolvedor Web'
+}
+]
+function changeLanguage(){
+    let title = document.querySelector('#creatorTitle')
+    if (englishVersion) {
+        title.textContent = languages[0].title;
+      } else {
+        title.textContent = languages[1].title;
+      }
+    englishVersion = !englishVersion  
 }
 export default SideBar;

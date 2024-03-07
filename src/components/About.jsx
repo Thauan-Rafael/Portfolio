@@ -8,7 +8,7 @@ function About(){
             <div id='aboutText'>
                 <p> - FullStack Web Developer</p>
                 <p> - Studying Systems Analysis and Development</p>
-                <p> - Worked as IT Assistant doing computer assembly,repair and technical support</p>
+                <p> - Worked as IT Assistant doing technical support,computer assembly and repair</p>
                 <p> - Intermediate English speaker</p>
                 <p> - Email: thauanrafaeltrabalho@gmail.com</p>
                 <p> - Rio De Janeiro, Brazil</p>
