@@ -4,6 +4,8 @@ import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
         <About/>
         <Skills/>
         <Projects/>
+        <ToastContainer/>
       </div>
     </>
   )

@@ -7,12 +7,13 @@ import mysqlImg from '../media/mysql.png'
 import expressImg from '../media/express.png'
 import ejsImg from '../media/ejs.png'
 import nodeImg from '../media/node.png'
+import languages from "../languages";
 
 function Skills(){
     const [appName,setAppName] = React.useState('');
     return(
         <div id='skills'>
-            <h2>My Skills</h2>
+            <h2 id="skillsTitle">{languages[0].skillsTitle}</h2>
             <div id="skillList" onMouseLeave={clearAppName}>
                 <SkillImgs id= "React" img= {reactImg}/> 
                 <SkillImgs id= "Bootstrap" img= {bootstrapImg}/> 

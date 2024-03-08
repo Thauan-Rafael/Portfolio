@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import languages from '../languages';
+import { toast } from 'react-toastify';
 
 function SideBar(){
     return(
@@ -11,6 +13,7 @@ function SideBar(){
         </div>
     )
 }
+
 function redirectUser(event){
     const clickedLink = event.target.id;
     let redirect = '';
@@ -35,21 +38,34 @@ function redirectUser(event){
             break;
     }
 }
-let englishVersion = false;
-const languages = [{
-    title: 'Web Developer'
-},
-{
-    title: 'Desenvolvedor Web'
-}
-]
+let englishVersion = true;
 function changeLanguage(){
-    let title = document.querySelector('#creatorTitle')
-    if (englishVersion) {
-        title.textContent = languages[0].title;
-      } else {
-        title.textContent = languages[1].title;
-      }
-    englishVersion = !englishVersion  
+    if (!englishVersion) {
+        document.querySelector('#creatorTitle').textContent = languages[0].homeTitle;
+        document.querySelector('#aboutTitle').textContent = languages[0].aboutTitle;
+        document.querySelector('#skillsTitle').textContent = languages[0].skillsTitle;
+        document.querySelector('#projectsTitle').textContent = languages[0].projectsTitle;
+        document.querySelector('#moreProjects').textContent = languages[0].moreProjects;
+        document.querySelectorAll('#aboutText p').forEach((item,index) => {item.textContent = languages[0].aboutPoints[index]})
+        document.querySelectorAll('.card-text').forEach((item,index) => {item.textContent = languages[0].projectsList[index]})
+        toast('English Version', {
+            position: "bottom-right",autoClose: 4000,hideProgressBar: true,closeOnClick: true,
+            pauseOnHover: true,progress: undefined,theme: "dark",icon: false, className: 'portfolioToast'
+            });
+    }
+    else {
+        document.querySelector('#creatorTitle').textContent = languages[1].homeTitle;
+        document.querySelector('#aboutTitle').textContent = languages[1].aboutTitle;
+        document.querySelector('#skillsTitle').textContent = languages[1].skillsTitle;
+        document.querySelector('#projectsTitle').textContent = languages[1].projectsTitle;
+        document.querySelector('#moreProjects').textContent = languages[1].moreProjects;
+        document.querySelectorAll('#aboutText p').forEach((item,index) => {item.textContent = languages[1].aboutPoints[index]})
+        document.querySelectorAll('.card-text').forEach((item,index) => {item.textContent = languages[1].projectsList[index]})
+        toast('Versão PT-BR', {
+            position: "bottom-right",autoClose: 4000,hideProgressBar: true,closeOnClick: true,
+            pauseOnHover: true,progress: undefined,theme: "dark",icon: false, className: 'portfolioToast'
+            });
+    }
+    englishVersion = !englishVersion
 }
 export default SideBar;

@@ -1,5 +1,6 @@
 import React from "react";
 import creatorImg from '../media/creatorImg.png';
+import languages from "../languages";
 function Home(){
     return(
         
@@ -7,7 +8,7 @@ function Home(){
             <img src={creatorImg}></img>
             <div id="homeHeader">
                 <h1>Thauan Rafael</h1>
-                <h2 id="creatorTitle">Web Developer</h2>
+                <h2 id="creatorTitle">{languages[0].homeTitle}</h2>
                 <div id="homeButtons">
                     <button id="githubBtn" type="button" className="icon fa-brands fa-github" onClick={socialLink}></button>
                     <button id="LinkedinBtn" type="button" className="icon fa-brands fa-linkedin" onClick={socialLink}></button>
