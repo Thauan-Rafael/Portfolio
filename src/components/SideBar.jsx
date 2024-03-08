@@ -49,7 +49,7 @@ function changeLanguage(){
         document.querySelectorAll('#aboutText p').forEach((item,index) => {item.textContent = languages[0].aboutPoints[index]})
         document.querySelectorAll('.card-text').forEach((item,index) => {item.textContent = languages[0].projectsList[index]})
         toast('English Version', {
-            position: "bottom-right",autoClose: 4000,hideProgressBar: true,closeOnClick: true,
+            position: "bottom-right",autoClose: 3000,hideProgressBar: true,closeOnClick: true,
             pauseOnHover: true,progress: undefined,theme: "dark",icon: false, className: 'portfolioToast'
             });
     }
@@ -62,7 +62,7 @@ function changeLanguage(){
         document.querySelectorAll('#aboutText p').forEach((item,index) => {item.textContent = languages[1].aboutPoints[index]})
         document.querySelectorAll('.card-text').forEach((item,index) => {item.textContent = languages[1].projectsList[index]})
         toast('Versão PT-BR', {
-            position: "bottom-right",autoClose: 4000,hideProgressBar: true,closeOnClick: true,
+            position: "bottom-right",autoClose: 3000,hideProgressBar: true,closeOnClick: true,
             pauseOnHover: true,progress: undefined,theme: "dark",icon: false, className: 'portfolioToast'
             });
     }
