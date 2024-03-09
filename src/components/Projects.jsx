@@ -78,13 +78,13 @@ function openLink(event){
             window.open('https://givemefeedback.onrender.com/','_blank').focus(); 
             break;        
         case '00':
-            window.open('https://github.com/Thauan-Rafael/Weather','_blank').focus();
+            window.open('https://github.com/Thauan-Rafael/WeatherProject','_blank').focus();
             break;
         case '01':
             window.open('https://github.com/Thauan-Rafael/CatsChat-React','_blank').focus();
             break;
         case '02':
-            window.open('https://github.com/Thauan-Rafael/Feedback','_blank').focus(); 
+            window.open('https://github.com/Thauan-Rafael/FeedbackProject','_blank').focus(); 
             break;
         default:
             break;
