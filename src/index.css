@@ -404,9 +404,10 @@
     }
     .card{
       height: 82vh;
-      width: 33vw;
+      width: 37vw;
     }
     .card-text{
+      padding: 1%;
       font-size: 2.8vh;
     }
     #cardButtons a{
@@ -463,6 +464,7 @@
     grid-template-rows: 3fr 2fr;
   }
   #aboutText{
+    text-align: center;
     margin: 0;
   }
   .card{
