@@ -1,5 +1,5 @@
 import React from "react";
-import creatorImg from '../media/creatorImg.png';
+import creatorImg from '../media/creatorIMG.png';
 import languages from "../languages";
 function Home(){
     return(

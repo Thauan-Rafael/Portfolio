@@ -1,5 +1,5 @@
 import React from 'react';
-import tempVideo from '../media/tempVideo.mp4'
+import personalVideo from '../media/englishVersion.mp4'
 import languages from '../languages';
 
 function About(){
@@ -16,7 +16,7 @@ function About(){
                 <p>{languages[0].aboutPoints[5]}</p>
             </div>
             <div>
-                <video controls src={tempVideo}></video>
+                <video id='personalVideo' controls src={personalVideo}></video>
             </div>
         </div>
         </div>

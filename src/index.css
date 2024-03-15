@@ -359,6 +359,13 @@
     #sideBar i {
       font-size: 5vw;
     }
+    #home{
+      grid-template-columns: 3fr 2fr;
+    }
+    #home img{
+      height: 45vh;
+      width: 90%;
+    }
     #homeButtons button{
       width: 40%;
       border-radius: 100px;

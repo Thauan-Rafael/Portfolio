@@ -1,6 +1,9 @@
 import React from 'react';
 import languages from '../languages';
 import { toast } from 'react-toastify';
+import englishVideo from '../media/englishVersion.mp4'
+import brazilianVideo from '../media/brazilianVersion.mp4'
+
 
 function SideBar(){
     return(
@@ -43,6 +46,7 @@ function changeLanguage(){
     if (!englishVersion) {
         document.querySelector('#creatorTitle').textContent = languages[0].homeTitle;
         document.querySelector('#aboutTitle').textContent = languages[0].aboutTitle;
+        document.querySelector('#personalVideo').src = englishVideo;
         document.querySelector('#skillsTitle').textContent = languages[0].skillsTitle;
         document.querySelector('#projectsTitle').textContent = languages[0].projectsTitle;
         document.querySelector('#moreProjects').textContent = languages[0].moreProjects;
@@ -56,6 +60,7 @@ function changeLanguage(){
     else {
         document.querySelector('#creatorTitle').textContent = languages[1].homeTitle;
         document.querySelector('#aboutTitle').textContent = languages[1].aboutTitle;
+        document.querySelector('#personalVideo').src = brazilianVideo;
         document.querySelector('#skillsTitle').textContent = languages[1].skillsTitle;
         document.querySelector('#projectsTitle').textContent = languages[1].projectsTitle;
         document.querySelector('#moreProjects').textContent = languages[1].moreProjects;

@@ -29,9 +29,9 @@ const languages = [{
     skillsTitle: 'Habilidades',
     projectsTitle: 'Projetos',
     projectsList:[
-        'Aplicativo para buscar o clima pesquisando as coordenadas usando OpenWeatherMap. Criado com Node.js,Express.js e Bootstrap.',
+        'Aplicativo para buscar o clima pesquisando as coordenadas usando OpenWeatherMap. Criado com Node.js,Express.js,EJS e Bootstrap.',
         'Página Web para divulgar um aplicativo mobile de adoção de gatos. Criado com React e Bootstrap.',
-        'Formulário que envia feedbacks para um banco de dados MongoDB. Criado com React,Node.js,Express.js e MongoDB.'],
+        'Formulário que envia feedbacks para um banco de dados MongoDB. Criado com React,Bootstrap,Node.js,Express.js e MongoDB.'],
     moreProjects: 'Mais projetos em breve...'
 }
 ]
