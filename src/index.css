@@ -269,7 +269,7 @@
     grid-template-rows: 2fr 1fr;
   }
   .portfolioToast {
-    margin: 0 auto 15px auto;
+    margin: 0 auto 15px auto !important;
     width: 65%;
   }
   @media (max-width: 576px){
