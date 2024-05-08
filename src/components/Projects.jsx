@@ -3,6 +3,7 @@ import weatherImg from '../media/weatherIMG.png'
 import catsImg from '../media/catsIMG.png'
 import feedbackImg from '../media/feedbackIMG.png'
 import crudImg from '../media/crudIMG.png'
+import foodsImg from '../media/foodsIMG.png'
 import languages from '../languages';
 
 function Projects(){
@@ -14,6 +15,7 @@ function Projects(){
                 <ProjectCard title={cards[1].title} text={cards[1].text} image={cards[1].image} siteId={cards[1].siteId} gitId={cards[1].gitId}/>
                 <ProjectCard title={cards[2].title} text={cards[2].text} image={cards[2].image} siteId={cards[2].siteId} gitId={cards[2].gitId}/>
                 <ProjectCard title={cards[3].title} text={cards[3].text} image={cards[3].image} siteId={cards[3].siteId} gitId={cards[3].gitId}/>
+                <ProjectCard title={cards[4].title} text={cards[4].text} image={cards[4].image} siteId={cards[4].siteId} gitId={cards[4].gitId}/>
             </div>
         <h3 id='moreProjects'>{languages[0].moreProjects}</h3>    
         </div>    
@@ -68,6 +70,13 @@ const cards = [
         text: languages[0].projectsList[3],
         siteId: '3',
         gitId: '03',
+    },
+    {
+        image: foodsImg,
+        title: 'TR Dev Foods',
+        text: languages[0].projectsList[4],
+        siteId: '4',
+        gitId: '04',
     }
 ]
 function openLink(event){
@@ -84,6 +93,9 @@ function openLink(event){
             break;
         case '3':
             window.open('https://crudlogic.onrender.com/','_blank').focus(); 
+            break;
+        case '4':
+            window.open('https://devfoods.onrender.com/','_blank').focus(); 
             break;            
         case '00':
             window.open('https://github.com/Thauan-Rafael/Weather','_blank').focus();
@@ -96,7 +108,10 @@ function openLink(event){
             break;
         case '03':
             window.open('https://github.com/Thauan-Rafael/CrudLogic','_blank').focus(); 
-            break;    
+            break;
+        case '04':
+            window.open('https://github.com/Thauan-Rafael/Food','_blank').focus();
+            break;                 
         default:
             break;
     }

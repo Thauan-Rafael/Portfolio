@@ -14,7 +14,8 @@ const languages = [{
         'App to see a weather from a place searching by coordinates using OpenWeatherMap. Created with Node.js,Express.js,EJS and Bootstrap.',
         'Landing page to disclose a mobile application of cats adoption. Created with React and Bootstrap.',
         'Web form that send feedbacks to a MongoDB database. Created with React,Bootstrap,Node.js,Express.js and MongoDB.',
-        'App to emulate the logic of CRUD operations in a SQL Database. Created with React,Bootstrap,Node.js,Express.js and MySQL.'],
+        'App to emulate the logic of CRUD operations in a SQL Database. Created with React,Bootstrap,Node.js,Express.js and MySQL.',
+        'Concept of a online restaurant with many options of foods and cart administration. Created with React and Bootstrap.'],
     moreProjects: 'More projects coming soon...'    
 },
 {
@@ -33,7 +34,8 @@ const languages = [{
         'Aplicativo para buscar o clima pesquisando as coordenadas usando OpenWeatherMap. Criado com Node.js,Express.js,EJS e Bootstrap.',
         'Página Web para divulgar um aplicativo mobile de adoção de gatos. Criado com React e Bootstrap.',
         'Formulário que envia feedbacks para um banco de dados MongoDB. Criado com React,Bootstrap,Node.js,Express.js e MongoDB.',
-        'App para emular a lógica de operações CRUD em um banco de dados SQL. Criado com React,Bootstrap,Node.js,Express.js e MySQL.'],
+        'App para emular a lógica de operações CRUD em um banco de dados SQL. Criado com React,Bootstrap,Node.js,Express.js e MySQL.',
+        'Conceito de um restaurante online com várias opções de comida e administração de carrinho. Criado com React e Bootstrap.'],
     moreProjects: 'Mais projetos em breve...'
 }
 ]
