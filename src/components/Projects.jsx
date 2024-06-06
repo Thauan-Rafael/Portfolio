@@ -4,6 +4,7 @@ import catsImg from '../media/catsIMG.png'
 import feedbackImg from '../media/feedbackIMG.png'
 import crudImg from '../media/crudIMG.png'
 import foodsImg from '../media/foodsIMG.png'
+import quizImg from '../media/quizIMG.png'
 import languages from '../languages';
 
 function Projects(){
@@ -16,6 +17,7 @@ function Projects(){
                 <ProjectCard title={cards[2].title} text={cards[2].text} image={cards[2].image} siteId={cards[2].siteId} gitId={cards[2].gitId}/>
                 <ProjectCard title={cards[3].title} text={cards[3].text} image={cards[3].image} siteId={cards[3].siteId} gitId={cards[3].gitId}/>
                 <ProjectCard title={cards[4].title} text={cards[4].text} image={cards[4].image} siteId={cards[4].siteId} gitId={cards[4].gitId}/>
+                <ProjectCard title={cards[5].title} text={cards[5].text} image={cards[5].image} siteId={cards[5].siteId} gitId={cards[5].gitId}/>
             </div>
         <h3 id='moreProjects'>{languages[0].moreProjects}</h3>    
         </div>    
@@ -42,13 +44,13 @@ function Projects(){
 }
 const cards = [
     {
-        image: weatherImg,
-        title: 'Weather Searcher',
+        image: quizImg,
+        title: 'RNG Math Quiz',
         text: languages[0].projectsList[0],
         webLink: '',
         githubLink: '',
         siteId: '0',
-        gitId: '00', 
+        gitId: '00',
     },
     {
         image: catsImg,
@@ -77,13 +79,22 @@ const cards = [
         text: languages[0].projectsList[4],
         siteId: '4',
         gitId: '04',
+    },
+    {
+        image: weatherImg,
+        title: 'Weather Searcher',
+        text: languages[0].projectsList[5],
+        webLink: '',
+        githubLink: '',
+        siteId: '5',
+        gitId: '05', 
     }
 ]
 function openLink(event){
     const linkClicked = event.target.id;
     switch (linkClicked) {
         case '0':
-            window.open('https://weather-searcher.onrender.com/','_blank').focus();
+            window.open('https://rngmathquiz.onrender.com/','_blank').focus();
             break;
         case '1':
             window.open('https://cats-chat.onrender.com/','_blank').focus();
@@ -96,9 +107,12 @@ function openLink(event){
             break;
         case '4':
             window.open('https://devfoods.onrender.com/','_blank').focus(); 
+            break;
+        case '5':
+            window.open('https://weather-searcher.onrender.com/','_blank').focus();
             break;            
         case '00':
-            window.open('https://github.com/Thauan-Rafael/Weather','_blank').focus();
+            window.open('https://github.com/Thauan-Rafael/Quiz','_blank').focus();
             break;
         case '01':
             window.open('https://github.com/Thauan-Rafael/CatsChat-React','_blank').focus();
@@ -111,6 +125,9 @@ function openLink(event){
             break;
         case '04':
             window.open('https://github.com/Thauan-Rafael/Food','_blank').focus();
+            break;
+        case '05':
+            window.open('https://github.com/Thauan-Rafael/Weather','_blank').focus();
             break;                 
         default:
             break;
